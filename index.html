@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <script
+    src="https://kit.fontawesome.com/e6eae71e18.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    <!-- Container for the music player -->
+    <div class="container">
+        <!-- Artist name and song title -->
+        <div class="text">
+            <div class="subtitle">
+                <h2 class="artist-name">Artist</h2>
+            </div>
+            <div class="title">
+                <h1 class="track-name">Track Title</h1>
+            </div>
+        </div>
+        <!-- Seek slider -->
+        <div class="slider-container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo()">
+            <div class="time-duration">00:00</div>
+        </div>
+        <!-- Previous Next & Pause buttons -->
+        <div class="buttons">
+            <div class="prev" onclick="prevTrack()">
+              <i class="fa fa-step-backward fa-2x"></i>
+            </div>
+            <div class="play" onclick="playpauseTrack()">
+              <i class="fa fa-play-circle fa-5x"></i>
+              <audio class="audio"></audio>
+            </div>
+            <div class="next" onclick="nextTrack()">
+              <i class="fa fa-step-forward fa-2x"></i>
+            </div>
+          </div>
+    </div>
+    <script src="./Scripts/script.js"></script>
+</body>
+</html>

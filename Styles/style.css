@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    border: 1px solid #5da5d4;
+    background-color: #eeeeee;
+    border-radius: 22px;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    margin-top: -14%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    background: url(https://8list.ph/wp-content/uploads/2016/10/BASKETBALLTERMS_HEADER.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 72%;
+    margin-left: 13.5%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 9%;
+}
+
+.subtitle {
+    width: 37%;
+    margin-bottom: 13%;
+    margin-top: 5%;
+    background: rgba(163, 170, 170, 0.49);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15.5px);
+    -webkit-backdrop-filter: blur(15.5px);
+}
+
+.artist-name {
+    font-size: 16px;
+}
+
+.title {
+    width: 50%;
+    margin-bottom: 10%;
+    background: rgba(163, 170, 170, 0.49);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15.5px);
+    -webkit-backdrop-filter: blur(15.5px);
+}
+
+.track-name {
+    font-size: 20px;
+}
+
+.slider-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 13.5%;
+    margin-top: 8%;
+}
+
+.current-time {
+    font-size: 16px;
+}
+
+.seek-slider {
+    width: 67.5%;
+}
+
+.time-duration {
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
